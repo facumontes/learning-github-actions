@@ -16,12 +16,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  Checkout-repository:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "This is the testing job, which runs after the Explore-GitHub-Actions job."
 
-      - name: Check out repository code
-        uses: actions/checkout@v5
-        
-      - run: echo "The repository has been checked out in the testing job."
